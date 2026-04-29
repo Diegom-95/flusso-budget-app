@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background DARK -->
+    <color name="bg_primary">#0D1526</color>
+    <color name="bg_surface">#162035</color>
+    <color name="bg_card">#1C2A45</color>
+    <!-- Accents DARK -->
+    <color name="color_income">#00E5A0</color>
+    <color name="color_expense">#FF4081</color>
+    <color name="color_saving">#FFD600</color>
+    <color name="color_debt">#9C6FFF</color>
+    <color name="color_need">#00B0FF</color>
+    <color name="color_want">#FF9100</color>
+    <!-- Chart -->
+    <color name="chart_1">#FF4081</color>
+    <color name="chart_2">#00E5A0</color>
+    <color name="chart_3">#FFD600</color>
+    <color name="chart_4">#7C4DFF</color>
+    <color name="chart_5">#00B0FF</color>
+    <color name="chart_6">#FF6D00</color>
+    <color name="chart_7">#E040FB</color>
+    <color name="chart_8">#64DD17</color>
+    <!-- Text DARK -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#7A90BB</color>
+    <color name="text_hint">#3A4F77</color>
+    <color name="text_label">#AABBDD</color>
+    <color name="divider">#1E3050</color>
+    <!-- Spinner DARK -->
+    <color name="spinner_bg">#1A2540</color>
+    <color name="spinner_border">#2A3560</color>
+    <color name="spinner_text">#FFFFFF</color>
+    <!-- Material baseline -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

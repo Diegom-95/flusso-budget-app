@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_dashboard">
+    <fragment android:id="@+id/nav_dashboard"
+        android:name="com.diego.budgetmensile.ui.dashboard.DashboardFragment"
+        android:label="Dashboard">
+        <action android:id="@+id/action_dashboard_to_annual"   app:destination="@id/nav_annual"/>
+        <action android:id="@+id/action_dashboard_to_goals"    app:destination="@id/nav_goals"/>
+        <action android:id="@+id/action_dashboard_to_settings" app:destination="@id/nav_settings"/>
+    </fragment>
+    <fragment android:id="@+id/nav_expenses"
+        android:name="com.diego.budgetmensile.ui.expenses.ExpensesFragment"
+        android:label="Spese">
+        <action android:id="@+id/action_expenses_to_budget" app:destination="@id/nav_budget"/>
+    </fragment>
+    <fragment android:id="@+id/nav_income"
+        android:name="com.diego.budgetmensile.ui.income.IncomeFragment"   android:label="Entrate"/>
+    <fragment android:id="@+id/nav_savings"
+        android:name="com.diego.budgetmensile.ui.savings.SavingsFragment" android:label="Risparmi"/>
+    <fragment android:id="@+id/nav_debt"
+        android:name="com.diego.budgetmensile.ui.debt.DebtFragment"       android:label="Debiti"/>
+    <fragment android:id="@+id/nav_goals"
+        android:name="com.diego.budgetmensile.ui.goals.GoalsFragment"     android:label="Obiettivi"/>
+    <fragment android:id="@+id/nav_settings"
+        android:name="com.diego.budgetmensile.ui.dashboard.SettingsFragment" android:label="Impostazioni"/>
+    <fragment android:id="@+id/nav_annual"
+        android:name="com.diego.budgetmensile.ui.annual.AnnualDashboardFragment" android:label="Annuale"/>
+    <fragment android:id="@+id/nav_budget"
+        android:name="com.diego.budgetmensile.ui.expenses.BudgetFragment" android:label="Budget"/>
+</navigation>

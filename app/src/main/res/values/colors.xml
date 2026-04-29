@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background LIGHT -->
+    <color name="bg_primary">#F0F4FA</color>
+    <color name="bg_surface">#FFFFFF</color>
+    <color name="bg_card">#E8EEF8</color>
+    <!-- Accents LIGHT (leggermente scuriti per leggibilità su bianco) -->
+    <color name="color_income">#00B37A</color>
+    <color name="color_expense">#E0003A</color>
+    <color name="color_saving">#C9A800</color>
+    <color name="color_debt">#6B3FD6</color>
+    <color name="color_need">#0088CC</color>
+    <color name="color_want">#CC6600</color>
+    <!-- Chart -->
+    <color name="chart_1">#E0003A</color>
+    <color name="chart_2">#00B37A</color>
+    <color name="chart_3">#C9A800</color>
+    <color name="chart_4">#5C2ECC</color>
+    <color name="chart_5">#0088CC</color>
+    <color name="chart_6">#CC4400</color>
+    <color name="chart_7">#BB00EE</color>
+    <color name="chart_8">#4CAF00</color>
+    <!-- Text LIGHT -->
+    <color name="text_primary">#0D1526</color>
+    <color name="text_secondary">#4A6080</color>
+    <color name="text_hint">#8099BB</color>
+    <color name="text_label">#334466</color>
+    <color name="divider">#D0DAEA</color>
+    <!-- Spinner LIGHT -->
+    <color name="spinner_bg">#E0E8F4</color>
+    <color name="spinner_border">#B0C0D8</color>
+    <color name="spinner_text">#0D1526</color>
+    <!-- Material baseline -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

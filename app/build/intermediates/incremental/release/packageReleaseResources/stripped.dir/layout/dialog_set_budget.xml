@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="24dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilBudgetCategory"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Categoria" android:layout_marginBottom="12dp">
+        <AutoCompleteTextView android:id="@+id/spinnerBudgetCategory"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="none" android:focusable="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Limite mensile (€)">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etBudgetLimit"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="💡 Riceverai un avviso visivo quando superi l'80% del budget."
+        android:textColor="#7A90BB" android:textSize="11sp" android:layout_marginTop="12dp"/>
+</LinearLayout>

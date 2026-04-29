@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg_primary">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@color/bg_surface" android:orientation="horizontal"
+            android:padding="16dp" android:gravity="center_vertical">
+            <ImageButton android:id="@+id/btnBack"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/text_secondary"
+                android:contentDescription="Chiudi"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginStart="8dp"
+                android:text="Spese Ricorrenti"
+                android:textColor="@color/text_primary" android:textSize="20sp" android:textStyle="bold"/>
+            <!-- KPI totale mensile -->
+            <TextView android:id="@+id/tvTotaleMensile"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/color_expense" android:textSize="16sp" android:textStyle="bold"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="/mese" android:textColor="@color/text_secondary" android:textSize="11sp"
+                android:layout_marginStart="2dp"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvEmpty"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Nessuna spesa ricorrente attiva."
+            android:textColor="@color/text_secondary" android:textSize="14sp"
+            android:gravity="center" android:padding="32dp" android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvRecurring"
+            android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false" android:paddingBottom="80dp"/>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

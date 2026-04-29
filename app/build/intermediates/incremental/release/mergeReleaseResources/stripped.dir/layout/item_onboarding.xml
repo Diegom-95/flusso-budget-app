@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center"
+    android:padding="40dp" android:background="@color/bg_primary">
+
+    <TextView android:id="@+id/tvEmoji"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="72sp" android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView android:id="@+id/tvTitle"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="@color/text_primary" android:textSize="26sp"
+        android:textStyle="bold" android:gravity="center" android:layout_marginBottom="16dp"/>
+
+    <TextView android:id="@+id/tvDesc"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="@color/text_secondary" android:textSize="15sp"
+        android:gravity="center" android:lineSpacingMultiplier="1.4"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Visibile solo nell'ultima schermata: inserimento stipendio -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilSalary"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Il tuo stipendio mensile (€)"
+        android:visibility="gone"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSalary"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

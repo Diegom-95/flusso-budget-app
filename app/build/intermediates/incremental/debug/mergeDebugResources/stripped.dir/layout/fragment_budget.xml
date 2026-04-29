@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg_primary">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@color/bg_surface" android:orientation="horizontal"
+            android:padding="16dp" android:gravity="center_vertical">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Budget per Categoria" android:textColor="@color/text_primary"
+                    android:textSize="20sp" android:textStyle="bold"/>
+                <TextView android:id="@+id/tvBudgetMonth"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary" android:textSize="12sp"/>
+            </LinearLayout>
+            <!-- KPI totale budget vs speso -->
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="vertical" android:gravity="end">
+                <TextView android:id="@+id/tvBudgetTotalSpent"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="@color/color_expense" android:textSize="16sp" android:textStyle="bold"/>
+                <TextView android:id="@+id/tvBudgetTotalLimit"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary" android:textSize="11sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Barra totale -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp" android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="12dp" app:cardElevation="2dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="12dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:layout_marginBottom="6dp">
+                    <TextView android:text="Budget totale mensile"
+                        android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                        android:textColor="@color/text_secondary" android:textSize="12sp"/>
+                    <TextView android:id="@+id/tvTotalPct"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="@color/text_primary" android:textSize="12sp" android:textStyle="bold"/>
+                </LinearLayout>
+                <ProgressBar android:id="@+id/progressTotal"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent" android:layout_height="10dp"
+                    android:max="100" android:progressBackgroundTint="#1AFFFFFF"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/tvEmptyBudget"
+            android:text="Nessun budget impostato.\nPremi + per aggiungerne uno."
+            android:textColor="@color/text_secondary" android:textSize="14sp"
+            android:gravity="center" android:padding="32dp" android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvBudget"
+            android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:clipToPadding="false"
+            android:paddingTop="8dp" android:paddingBottom="80dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddBudget"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/color_expense" app:tint="@color/bg_primary"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

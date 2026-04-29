@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_dashboard" android:icon="@android:drawable/ic_menu_today" android:title="Mese"/>
+    <item android:id="@+id/nav_expenses" android:icon="@android:drawable/ic_menu_send" android:title="Spese"/>
+    <item android:id="@+id/nav_income" android:icon="@android:drawable/ic_menu_add" android:title="Entrate"/>
+    <item android:id="@+id/nav_savings" android:icon="@android:drawable/ic_menu_save" android:title="Risparmi"/>
+    <item android:id="@+id/nav_debt" android:icon="@android:drawable/ic_menu_directions" android:title="Debiti"/>
+</menu>

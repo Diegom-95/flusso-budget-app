@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flusso</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_expenses">Spese</string>
+    <string name="nav_income">Entrate</string>
+    <string name="nav_savings">Risparmi</string>
+    <string name="nav_debt">Debiti</string>
+    <string name="nav_annual">Annuale</string>
+    <string name="add_expense">Aggiungi Spesa</string>
+    <string name="add_income">Aggiungi Entrata</string>
+    <string name="add_saving">Aggiungi Risparmio</string>
+    <string name="cancel">Annulla</string>
+    <string name="save">Salva</string>
+    <string name="delete">Elimina</string>
+</resources>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+        <!-- HEADER -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@color/bg_surface" android:orientation="horizontal"
+            android:padding="16dp" android:gravity="center_vertical">
+            <TextView android:id="@+id/tvMeseHeader" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Gennaio 2026"
+                android:textColor="@color/text_primary" android:textSize="22sp" android:textStyle="bold"/>
+            <Spinner android:id="@+id/spinnerMonth" android:layout_width="wrap_content" android:layout_height="40dp"
+                android:background="@drawable/bg_spinner" android:popupBackground="@color/bg_surface"/>
+            <View android:layout_width="8dp" android:layout_height="1dp"/>
+            <Spinner android:id="@+id/spinnerYear" android:layout_width="wrap_content" android:layout_height="40dp"
+                android:background="@drawable/bg_spinner" android:popupBackground="@color/bg_surface"/>
+            <View android:layout_width="8dp" android:layout_height="1dp"/>
+            <ImageButton
+                android:id="@+id/btnAnnual"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_month"
+                android:background="@drawable/bg_spinner"
+                android:contentDescription="Riepilogo Annuale"
+                android:tint="@color/text_primary"
+                android:scaleType="centerInside"
+                android:padding="6dp"/>
+        </LinearLayout>
+
+        <!-- 4 KPI CARDS row 1 -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:padding="12dp">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="14dp" app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="14dp">
+                    <TextView android:text="Totale Entrate" android:textColor="@color/text_secondary" android:textSize="10sp"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvTotaleEntrate" android:text="0 €"
+                        android:textColor="@color/color_income" android:textSize="18sp" android:textStyle="bold"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <View android:layout_width="match_parent" android:layout_height="2dp"
+                        android:background="@color/color_income" android:layout_marginTop="6dp" android:alpha="0.4"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="14dp" app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="14dp">
+                    <TextView android:text="Totale Spese" android:textColor="@color/text_secondary" android:textSize="10sp"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvTotaleSpese" android:text="0 €"
+                        android:textColor="@color/color_expense" android:textSize="18sp" android:textStyle="bold"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <View android:layout_width="match_parent" android:layout_height="2dp"
+                        android:background="@color/color_expense" android:layout_marginTop="6dp" android:alpha="0.4"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- 4 KPI CARDS row 2 -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingHorizontal="12dp">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="14dp" app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="14dp">
+                    <TextView android:text="Totale Risparmi" android:textColor="@color/text_secondary" android:textSize="10sp"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvTotaleRisparmi" android:text="0 €"
+                        android:textColor="@color/color_saving" android:textSize="18sp" android:textStyle="bold"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <View android:layout_width="match_parent" android:layout_height="2dp"
+                        android:background="@color/color_saving" android:layout_marginTop="6dp" android:alpha="0.4"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="14dp" app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="14dp">
+                    <TextView android:text="Totale Debito Pagato" android:textColor="@color/text_secondary" android:textSize="10sp"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvTotaleDebiti" android:text="0 €"
+                        android:textColor="@color/color_debt" android:textSize="18sp" android:textStyle="bold"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <View android:layout_width="match_parent" android:layout_height="2dp"
+                        android:background="@color/color_debt" android:layout_marginTop="6dp" android:alpha="0.4"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- RIMASTO -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp" android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="14dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:padding="16dp" android:gravity="center_vertical">
+                <TextView android:text="Entrate non allocate:" android:textColor="@color/text_secondary"
+                    android:textSize="13sp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:id="@+id/tvRimasto" android:text="0 €"
+                    android:textColor="@color/color_income" android:textSize="24sp" android:textStyle="bold"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- KPI % -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingHorizontal="12dp" android:paddingTop="8dp">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="14dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="14dp" android:gravity="center">
+                    <TextView android:text="Spese % Reddito" android:textColor="@color/text_secondary"
+                        android:textSize="10sp" android:gravity="center"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvPctSpese" android:text="0%"
+                        android:textColor="@color/color_expense" android:textSize="30sp" android:textStyle="bold"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <ProgressBar android:id="@+id/progressSpese" style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent" android:layout_height="6dp"
+                        android:progressTint="@color/color_expense" android:progressBackgroundTint="@color/divider"
+                        android:max="100" android:progress="0" android:layout_marginTop="6dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="14dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="14dp" android:gravity="center">
+                    <TextView android:text="Risparmi % Reddito" android:textColor="@color/text_secondary"
+                        android:textSize="10sp" android:gravity="center"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvPctRisparmi" android:text="0%"
+                        android:textColor="@color/color_saving" android:textSize="30sp" android:textStyle="bold"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <ProgressBar android:id="@+id/progressRisparmi" style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent" android:layout_height="6dp"
+                        android:progressTint="@color/color_saving" android:progressBackgroundTint="@color/divider"
+                        android:max="100" android:progress="0" android:layout_marginTop="6dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- SEZIONE ENTRATE -->
+        <TextView android:text="ENTRATE" android:textColor="@color/color_income"
+            android:textSize="15sp" android:textStyle="bold" android:letterSpacing="0.12"
+            android:paddingHorizontal="16dp" android:paddingTop="20dp" android:paddingBottom="4dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp" android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="14dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="12dp">
+                <TextView android:text="Ripartizione Reddito Mensile" android:textColor="@color/text_secondary"
+                    android:textSize="11sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.github.mikephil.charting.charts.PieChart android:id="@+id/pieChartEntrate"
+                    android:layout_width="match_parent" android:layout_height="200dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- SEZIONE SPESE -->
+        <TextView android:text="SPESE" android:textColor="@color/color_expense"
+            android:textSize="15sp" android:textStyle="bold" android:letterSpacing="0.12"
+            android:paddingHorizontal="16dp" android:paddingTop="12dp" android:paddingBottom="4dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <!-- Need/Want/Abbonamenti -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingHorizontal="12dp" android:paddingBottom="8dp">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="12dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                    <TextView android:text="Necessarie" android:textColor="@color/text_secondary"
+                        android:textSize="9sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvNecessarie" android:text="0 €"
+                        android:textColor="@color/color_need" android:textSize="15sp" android:textStyle="bold"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvPctNeed" android:text="0%"
+                        android:textColor="@color/text_secondary" android:textSize="10sp"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="12dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                    <TextView android:text="Volontarie" android:textColor="@color/text_secondary"
+                        android:textSize="9sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvVolontarie" android:text="0 €"
+                        android:textColor="@color/color_want" android:textSize="15sp" android:textStyle="bold"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvPctWant" android:text="0%"
+                        android:textColor="@color/text_secondary" android:textSize="10sp"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="12dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                    <TextView android:text="Abbonamenti" android:textColor="@color/text_secondary"
+                        android:textSize="9sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvAbbonamenti" android:text="0 €"
+                        android:textColor="@color/color_expense" android:textSize="15sp" android:textStyle="bold"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Line chart spese giornaliere -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp" android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="14dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="12dp">
+                <TextView android:text="Totale Spese Giornaliere" android:textColor="@color/text_secondary"
+                    android:textSize="11sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.github.mikephil.charting.charts.LineChart android:id="@+id/lineChartSpese"
+                    android:layout_width="match_parent" android:layout_height="180dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Donut spese -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp" android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="14dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="12dp">
+                <TextView android:text="Ripartizione Spese Mensili" android:textColor="@color/text_secondary"
+                    android:textSize="11sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.github.mikephil.charting.charts.PieChart android:id="@+id/pieChartSpese"
+                    android:layout_width="match_parent" android:layout_height="220dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Bar chart categorie -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp" android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="14dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="12dp">
+                <TextView android:text="Spese per Categoria" android:textColor="@color/text_secondary"
+                    android:textSize="11sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.github.mikephil.charting.charts.BarChart android:id="@+id/barChartCategorie"
+                    android:layout_width="match_parent" android:layout_height="200dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- SEZIONE RISPARMI -->
+        <TextView android:text="RISPARMI" android:textColor="@color/color_saving"
+            android:textSize="15sp" android:textStyle="bold" android:letterSpacing="0.12"
+            android:paddingHorizontal="16dp" android:paddingTop="12dp" android:paddingBottom="4dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingHorizontal="12dp" android:paddingBottom="8dp">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="12dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="14dp" android:gravity="center">
+                    <TextView android:text="Lungo Termine" android:textColor="@color/text_secondary"
+                        android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvLungoTermine" android:text="0 €"
+                        android:textColor="@color/color_saving" android:textSize="17sp" android:textStyle="bold"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="12dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="14dp" android:gravity="center">
+                    <TextView android:text="Breve Termine" android:textColor="@color/text_secondary"
+                        android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvBreveTermine" android:text="0 €"
+                        android:textColor="@color/color_saving" android:textSize="17sp" android:textStyle="bold"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp" android:layout_marginBottom="100dp"
+            app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="14dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="12dp">
+                <TextView android:text="Ripartizione Risparmio Mensile" android:textColor="@color/text_secondary"
+                    android:textSize="11sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.github.mikephil.charting.charts.PieChart android:id="@+id/pieChartRisparmi"
+                    android:layout_width="match_parent" android:layout_height="200dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="24dp">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Nuovo PIN (4-6 cifre)" android:layout_marginBottom="12dp">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etNewPin"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="numberPassword" android:maxLength="6"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Conferma PIN">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etConfirmPin"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="numberPassword" android:maxLength="6"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

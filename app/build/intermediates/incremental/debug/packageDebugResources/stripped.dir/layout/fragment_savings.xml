@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg_primary">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@color/bg_surface" android:gravity="center_vertical"
+            android:orientation="horizontal" android:padding="12dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Totale Risparmi: 0,00 €" android:textColor="@color/color_saving"
+                    android:textSize="18sp" android:textStyle="bold"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" android:orientation="horizontal">
+                    <TextView android:id="@+id/tvLongTerm"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="@color/text_secondary" android:textSize="11sp"/>
+                    <TextView android:id="@+id/tvShortTerm"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp" android:textColor="@color/text_secondary"
+                        android:textSize="11sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageButton android:id="@+id/btnSort"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_menu_sort_by_size" app:tint="@color/text_secondary"/>
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.PieChart android:id="@+id/pieChartMiniSavings"
+            android:layout_width="match_parent" android:layout_height="130dp" android:visibility="gone"/>
+
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:scrollbars="none" android:paddingHorizontal="8dp" android:paddingVertical="4dp">
+            <com.google.android.material.chip.ChipGroup android:id="@+id/chipGroupSavings"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                app:singleSelection="true"/>
+        </HorizontalScrollView>
+
+        <TextView android:id="@+id/tvEmpty"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center" android:paddingTop="60dp" android:text="Nessun risparmio ✨"
+            android:textColor="@color/text_secondary" android:textSize="14sp" android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvSavings"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:clipToPadding="false" android:paddingBottom="80dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddSaving"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" android:layout_margin="16dp"
+        android:contentDescription="Aggiungi risparmio"
+        android:src="@android:drawable/ic_input_add"
+        app:tint="@color/bg_primary"
+        app:backgroundTint="@color/color_saving"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

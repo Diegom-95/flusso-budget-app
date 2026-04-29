@@ -1,0 +1,222 @@
+[
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_dialog_add_income.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_add_income.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_dialog_add_expense.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_add_expense.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_item_spinner_dropdown.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_spinner_dropdown.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_dialog_withdraw.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_withdraw.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_fragment_savings.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_savings.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_fragment_budget.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_budget.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_dialog_add_recurring.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_add_recurring.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_dialog_set_pin.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_set_pin.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_item_saving.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_saving.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_fragment_income.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_income.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/color_nav_item_color.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/color/nav_item_color.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_item_onboarding.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_onboarding.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_dialog_add_debt_goal.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_add_debt_goal.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_dialog_add_saving.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_add_saving.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_fragment_recurring.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_recurring.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_item_debt_goal.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_debt_goal.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_item_budget_category.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_budget_category.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_fragment_goals.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_goals.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_fragment_annual_dashboard.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_annual_dashboard.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_activity_lock.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/activity_lock.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_activity_main.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_fragment_dashboard.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/drawable_bg_spinner.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/drawable/bg_spinner.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_dialog_set_budget.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_set_budget.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_item_recurring.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_recurring.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/drawable_dot_active.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/drawable/dot_active.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_fragment_expenses.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_expenses.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_item_income.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_income.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_item_spinner.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_spinner.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_fragment_debt.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_debt.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_fragment_settings.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_dialog_set_recurring.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_set_recurring.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_dialog_add_debt_payment.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_add_debt_payment.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/drawable_dot_inactive.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/drawable/dot_inactive.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_activity_onboarding.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/activity_onboarding.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_fragment_recurring_manager.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_recurring_manager.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_item_goal.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_goal.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_dialog_add_goal.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_add_goal.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/xml_provider_paths.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/xml/provider_paths.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/menu_menu_dashboard_overflow.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/menu/menu_dashboard_overflow.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/layout_item_expense.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_expense.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-debug-58:/navigation_nav_graph.xml.flat",
+        "source": "com.diego.budgetmensile.app-main-60:/navigation/nav_graph.xml"
+    }
+]

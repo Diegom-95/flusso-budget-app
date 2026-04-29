@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="16dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Questa spesa verrà aggiunta automaticamente nei mesi successivi."
+            android:textColor="@color/text_secondary" android:textSize="13sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Importo -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Importo (€)" android:layout_marginBottom="12dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRecurringAmount"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Frequenza -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilFrequency"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Frequenza" android:layout_marginBottom="12dp">
+            <AutoCompleteTextView android:id="@+id/spinnerFrequency"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="none" android:focusable="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Durata -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Durata (mesi, 0 = illimitata)">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDuration"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="0"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="0 = senza scadenza"
+                android:textColor="@color/text_secondary" android:textSize="11sp"/>
+        </LinearLayout>
+
+        <!-- Data inizio (pre-compilata con la data della spesa) -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Data primo addebito">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRecurringStartDate"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:focusable="false" android:clickable="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp" android:layout_marginVertical="5dp"
+    app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="14dp" app:cardElevation="3dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <!-- Riga titolo + badge + elimina -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/tvGoalName"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textColor="@color/text_primary" android:textSize="16sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvGoalStatus"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp" android:paddingVertical="3dp"
+                android:textSize="11sp" android:textStyle="bold"/>
+            <ImageButton android:id="@+id/btnEditGoal"
+                android:layout_width="36dp" android:layout_height="36dp" android:layout_marginStart="4dp"
+                android:src="@android:drawable/ic_menu_edit"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/color_saving" android:contentDescription="Modifica"/>
+            <ImageButton android:id="@+id/btnDeleteGoal"
+                android:layout_width="36dp" android:layout_height="36dp" android:layout_marginStart="4dp"
+                android:src="@android:drawable/ic_menu_delete"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/text_secondary" android:contentDescription="Elimina"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvGoalCategory"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/color_saving" android:textSize="12sp" android:layout_marginTop="2dp"/>
+
+        <!-- Importi: risparmiato / prelevato / disponibile -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="10dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                <TextView android:text="Risparmiato"
+                    android:textColor="@color/text_secondary" android:textSize="9sp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tvSaved"
+                    android:textColor="@color/color_saving" android:textSize="13sp" android:textStyle="bold"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                <TextView android:text="Prelevato"
+                    android:textColor="@color/text_secondary" android:textSize="9sp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tvWithdrawn"
+                    android:textColor="@color/color_expense" android:textSize="13sp" android:textStyle="bold"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                <TextView android:text="Disponibile"
+                    android:textColor="@color/text_secondary" android:textSize="9sp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tvAvailable"
+                    android:textColor="@color/color_income" android:textSize="13sp" android:textStyle="bold"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                <TextView android:text="Obiettivo"
+                    android:textColor="@color/text_secondary" android:textSize="9sp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tvTarget"
+                    android:textColor="@color/text_secondary" android:textSize="13sp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Progress bar -->
+        <ProgressBar android:id="@+id/progressGoal"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent" android:layout_height="8dp"
+            android:layout_marginTop="10dp" android:max="100"
+            android:progressTint="@color/color_saving"
+            android:progressBackgroundTint="#1AFFFFFF"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="6dp">
+            <TextView android:id="@+id/tvPct"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textColor="@color/color_saving" android:textSize="12sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvDeadline"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary" android:textSize="11sp"/>
+        </LinearLayout>
+
+        <!-- Separatore + bottone preleva -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#1AFFFFFF" android:layout_marginVertical="12dp"/>
+
+        <Button android:id="@+id/btnWithdraw"
+            android:layout_width="match_parent" android:layout_height="40dp"
+            android:text="💸  Preleva da questo obiettivo"
+            android:textColor="@color/color_expense" android:textSize="13sp"
+            android:backgroundTint="#15FF4081"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:strokeColor="@color/color_expense"/>
+
+        <!-- Storico prelievi (collassabile) -->
+        <LinearLayout android:id="@+id/layoutWithdrawals"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone"
+            android:layout_marginTop="8dp">
+            <TextView android:text="Storico prelievi"
+                android:textColor="@color/text_secondary" android:textSize="11sp" android:textStyle="bold"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"/>
+            <LinearLayout android:id="@+id/containerWithdrawals"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

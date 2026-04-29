@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/dialog_add_debt_goal.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_add_debt_goal.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/item_recurring.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_recurring.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/fragment_dashboard.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/fragment_settings.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/dialog_set_recurring.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_set_recurring.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/activity_main.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/dialog_add_debt_payment.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_add_debt_payment.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/activity_onboarding.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/activity_onboarding.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/item_expense.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_expense.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/item_goal.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_goal.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/item_spinner_dropdown.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_spinner_dropdown.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/fragment_annual_dashboard.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_annual_dashboard.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/item_saving.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_saving.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/item_onboarding.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_onboarding.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/fragment_expenses.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_expenses.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/activity_lock.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/activity_lock.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/item_budget_category.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_budget_category.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/fragment_recurring.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_recurring.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/fragment_budget.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_budget.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/dialog_add_goal.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_add_goal.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/dialog_set_budget.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_set_budget.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/dialog_withdraw.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_withdraw.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/dialog_add_income.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_add_income.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/dialog_add_recurring.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_add_recurring.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/fragment_recurring_manager.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_recurring_manager.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/fragment_income.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_income.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/fragment_debt.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_debt.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/fragment_goals.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_goals.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/item_income.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_income.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/item_debt_goal.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_debt_goal.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/dialog_add_expense.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_add_expense.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/dialog_set_pin.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_set_pin.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/fragment_savings.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/fragment_savings.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/dialog_add_saving.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/dialog_add_saving.xml"
+    },
+    {
+        "merged": "com.diego.budgetmensile.app-mergeDebugResources-57:/layout/item_spinner.xml",
+        "source": "com.diego.budgetmensile.app-main-60:/layout/item_spinner.xml"
+    }
+]
